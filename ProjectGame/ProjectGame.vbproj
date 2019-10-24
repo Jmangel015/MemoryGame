@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7129B285-EDF0-4878-94CB-ED544A1FF270}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjectGame.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectGame</RootNamespace>
+    <AssemblyName>ProjectGame</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjectGame.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjectGame.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonball.Designer.vb">
+      <DependentUpon>Dragonball.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dragonball.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Pokemon.Designer.vb">
+      <DependentUpon>Pokemon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pokemon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Naruto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Naruto.Designer.vb">
+      <DependentUpon>Naruto.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.vb">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectLevel.Designer.vb">
+      <DependentUpon>selectLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selectLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinDragonball.Designer.vb">
+      <DependentUpon>WinDragonball.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinDragonball.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinNaruto.Designer.vb">
+      <DependentUpon>WinNaruto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinNaruto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WinPokemon.Designer.vb">
+      <DependentUpon>WinPokemon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinPokemon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dragonball.resx">
+      <DependentUpon>Dragonball.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pokemon.resx">
+      <DependentUpon>Pokemon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Naruto.resx">
+      <DependentUpon>Naruto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectLevel.resx">
+      <DependentUpon>selectLevel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinDragonball.resx">
+      <DependentUpon>WinDragonball.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinNaruto.resx">
+      <DependentUpon>WinNaruto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinPokemon.resx">
+      <DependentUpon>WinPokemon.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Naruto\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5m4k11aqz2231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SonidoL1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jutsu.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameOver.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Naruto-Shippuden-Funny-Face-HD-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6eb6ad0e83e85bdb829a32ba43de97bf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goku_super_saiyan_blue_by_tcolon97_da7h4rf-350t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon-ball-z-latino-karaoke.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\son_goku_wallpaper_by_xxzicexx-d8x7qw2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61676-video_games-Lucario-748x421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemon-red-and-pokemon-blue-64-super-smash-bros-ultimate.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\created-a-3d-render-of-a-pokemon-trophy-in-the-grass-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soulcalibur.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\created-a-3d-render-of-a-pokemon-trophy-in-the-grass-wallpaper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemon-wallpaper-pikachu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
